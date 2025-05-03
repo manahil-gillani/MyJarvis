@@ -44,6 +44,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/round_button"
             android:text="GET STARTED"
+            android:id="@+id/getStartedBtn"
 
             ></Button>
     </LinearLayout>

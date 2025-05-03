@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Hi, Manahil"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="HOW MAY I HELP YOU TODAY?"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/square_button"
+            android:text="Talk with JARVIS"
+            android:textColor="@color/black"
+            android:gravity="bottom"
+            android:textSize="32sp"
+            android:elevation="4dp"
+            android:id="@+id/but1"
+             ></Button>
+            <ImageView
+                android:id="@+id/icon_top_right"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_north_east"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@id/but1"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="10dp"/>
+                <ImageView
+                    android:id="@+id/ic_jarvis"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_jarvis"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@id/but1"/>
+            </RelativeLayout>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:id="@+id/sp1"
+                android:layout_toEndOf="@+id/but1"></Space>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Chat with Bot"
+                android:background="@drawable/square_button"
+                android:textColor="@color/black"
+                android:gravity="bottom"
+                android:textSize="32sp"
+                android:elevation="4dp"
+                android:id="@+id/but2"
+                >
+            </Button>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_north_east"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@id/but2"
+                    android:layout_alignParentEnd="true"
+                    />
+                <ImageView
+                    android:id="@+id/ic_chat"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_chat_bubble_online"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@id/but2"
+                    android:paddingTop="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+<!--       recyclerview for history of chats-->
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:id="@+id/historyContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
