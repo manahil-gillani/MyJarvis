@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="GS_Button">#172663</color>
+    <color name="purple">#6D41F4</color>
+    <color name="lilac">#8C66FD</color>
+    <color name="history_blue">#001830</color>
 </resources>
