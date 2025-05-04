@@ -29,5 +29,18 @@ class HomeActivity : AppCompatActivity() {
             view.findViewById<TextView>(R.id.messageText).text = msg
             historyContainer.addView(view)
         }
+
+        val talkBtn = findViewById<Button>(R.id.but1)
+        talkBtn.setOnClickListener {
+            val intent = Intent(this, JarvisActivity::class.java)
+            startActivity(intent)
+        }
+
+        val chatBtn = findViewById<Button>(R.id.but2)
+        chatBtn.setOnClickListener {
+            val intent = Intent(this, JarvisActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
